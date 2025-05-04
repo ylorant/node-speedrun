@@ -4,6 +4,12 @@ const speedrun = new SpeedrunClient()
 // Get game details
 speedrun.games.get('j1npme6p').then(console.log)
 
+// Get game categories
+speedrun.games.getCategories('j1npme6p').then(console.log)
+
+// Get game variables
+speedrun.games.getVariables('j1npme6p').then(console.log)
+
 // Get game levels
 speedrun.games.getLevels('j1npme6p').then(console.log)
 
