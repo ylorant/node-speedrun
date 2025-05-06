@@ -1,6 +1,9 @@
 const SpeedrunClient = require('../lib/Client.js')
 const speedrun = new SpeedrunClient()
 
+// Search game
+speedrun.games.search('Super Mario 64').then(console.log)
+
 // Get game details
 speedrun.games.get('j1npme6p').then(console.log)
 
